@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <b>Title:</b>
+  <%= @submission.title %>
+</p>
+
+<p>
+  <%= image_tag @submission.photo.url(:medium) %>
+</p>
+
+<p>
+  <b>Blurb:</b>
+  <%= @submission.blurb %>
+</p>
+
+<p>
+  <b>Link:</b>
+  <%= @submission.link %>
+</p>
+
+
+<%= link_to 'Edit', edit_submission_path(@submission) %> |
+<%= link_to 'Back', submissions_path %>

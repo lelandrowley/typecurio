@@ -1,0 +1,46 @@
+<div id="container">
+  <% @submissions.each do |submission| %>
+    <!--POST-->
+    <div id="contents">
+      <div class="blogentry">
+        <h2>
+          <%= link_to submission.title, url_with_protocol(submission.link), :target => :blank %>
+        </h2>
+        
+        <p>
+          <%= image_tag submission.photo.url(:thumb), class: 'thumb'%>
+          <%= submission.blurb %>     
+        </p>
+        
+      </div>
+    </div>
+  
+  <!--END POST-->
+  <% end %>
+</div>
+
+<script>
+$(function(){
+  $('#container').masonry({
+    // options
+    itemSelector : '#contents',
+    columnWidth : 250px
+  });
+});
+
+</script>
+
+<!--MASONRY IMAGE LOAD FIX-->
+<script>
+  $(function(){
+
+    var $container = $('#container');
+  
+    $container.imagesLoaded( function(){
+      $container.masonry({
+        itemSelector : '#contents'
+      });
+    });
+  
+  });
+</script>

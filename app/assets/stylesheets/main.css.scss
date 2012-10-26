@@ -1,0 +1,309 @@
+
+body {
+	overflow:auto;
+	padding-bottom: 0px;
+	margin: 0;
+	font: 85% arial, hevetica, sans-serif;
+	text-align: center;
+	color: #333;
+	padding-bottom: 50px;
+	
+}
+
+a:link {color: #54adab; }
+a:visited { color: #54adab; }
+a:focus { color: #04b9c3; }
+a:hover { color: #23acc0; }
+a:active { color: yellow; }
+h1, h2, h3, h4, h5, h6 { margin: 0 0 .5em; }
+
+h2
+{
+	color: #04b9c3;
+	}
+
+h2 a { text-decoration: none; }
+
+h3
+{
+	color: teal;
+	font: 110% georgia, times, "times new roman", serif;
+}
+
+/* ------------------------------
+container styles
+------------------------------ */
+
+#container
+{
+	posistion: relative;
+	min-height: 100%;
+	width: 100%;
+	text-align: left;
+	border:0px solid #676767;
+	background-color: white;
+	}
+
+/* ------------------------------
+header styles
+------------------------------ */
+
+#header
+{
+	height: 150px;
+	width: 100%;
+	position: relative;
+	background: url(https://s3.amazonaws.com/typecurio/site_images/background.png) repeat 0 0;
+	border-bottom: 1px solid #fff;
+	
+}
+
+#header h2
+{
+	top: 0px;
+	width: 300px;
+	margin: 0px auto 0px auto;
+	padding-top: 10px;
+}
+
+
+
+#skipmenu
+{
+	top: 0px;
+	width: 300px;
+	margin: 0px auto 0px auto;
+	padding-top: 10px;		
+}
+
+#subtext {
+	text-align: center;
+	display: block;
+	posistion: 0px auto 0px auto;
+	margin: 5	0	0	0;
+	color: gray;
+	text-decoration: none;
+	font: italic 500 20px museo-slab,serif;
+}
+
+#hrule
+{
+
+width:230px;
+margin: 0px auto 0px auto;
+height:2px;
+background-color: gray;
+}
+	
+
+
+
+#skipmenu a
+{
+	
+	text-align: center;
+	display: block;
+	margin: 0px 0px -10px 0px;
+	color: #555;text-shadow: 0 0 3px #04b9c3;
+	text-decoration: none;
+	font-family: bebas-neue,sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 50pt
+	
+	
+	
+}
+
+/* ------------------------------
+mainnav styles
+------------------------------ */
+
+#mainnav
+{
+	
+	color: #fdfdfd;
+	padding: 2px 0;
+	background-color: #e4e4e2;
+}
+
+#mainnav ul
+{
+	margin: 0 0 0 5px;
+	padding: 0;
+	list-style-type: none;
+	border-left: 0px solid #C4C769;
+}
+
+#mainnav li
+{
+	display: inline;
+	padding: 0 5px;
+	border-right: 0px solid #C4C769;
+	
+}
+
+#mainnav li a
+{
+	text-decoration: none;
+	color: gray;
+	font: italic 500 17px museo-slab,serif;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+#mainnav li a:hover
+{
+	text-decoration: none;
+	color: white;
+	background-color: teal;
+	padding: 2px 0;
+	margin-bottom: 22px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+/* ------------------------------
+menu styles
+------------------------------ */
+
+#menu
+{
+	float: right;
+	width: 165px;
+	border-left: 1px solid #C5C877;
+	padding-left: 15px;
+}
+
+#menu ul
+{
+	margin: 1em 0;
+	padding: 0;
+}
+
+#menu ul li
+{
+	margin: 0 0 1em;
+	padding: 0;
+	list-style-type: none;
+}
+
+/* ------------------------------
+contents styles
+------------------------------ */
+
+#contents
+{
+	float: left;
+	width: 250px;
+	margin: 20px 0 0 20px;
+	padding: 0 0 0 0;
+	background-color: #EAEFF2;
+	border-radius: 5px;
+}
+
+#contents p { 
+
+line-height: 165%;
+color: #85898b;
+margin: 0	10	0	20;
+padding: 0	0	0	13px;
+max-width: 90%;
+}
+
+.blogentry {
+	
+}
+
+img.thumb {
+	max-width: 224px;
+}
+
+.blogentry ul
+{
+	text-align: center;
+	margin: 1em 0;
+	padding: 0 0 0 10;
+	color: #54adab;
+	font: normal 100 95% museo-slab,serif;
+}
+
+.blogentry li
+{
+	list-style-type: none;
+	display: inline;
+	margin: 0;
+	padding: 0 0 0 20px;
+}
+
+.post-title
+{
+	display: block;
+	text-align: center;
+	margin: 10px	auto	0	auto;
+	text-transform: uppercase;
+	color: #04b9c3;
+	font: 20px museo-slab, georgia, times, serif;;
+}
+
+.imagefloat
+{
+	float: right;
+	padding: 2px;
+	border: 1px solid #f8f8f8;
+	margin: 0 0 10px 10px;
+	max-width: 80px;
+}
+
+.post-image
+{
+	display: block;
+	max-width: 90%;
+	margin: 10px auto 10px auto;
+}
+
+.field
+{
+	background-color: #04b9c3;
+}
+
+/* ------------------------------
+footer styles
+------------------------------ */
+
+/*#footer
+{
+	
+	position: absolute;
+	bottom: 0;
+	/*margin-top: -25px;
+	height: 25px;
+	clear: both;
+	width: 100%;
+	color: #989c9d;
+	text-align: center;
+	font-size: 90%;
+	background: #dddddb;
+	padding-right: 0px;
+	padding-top: 10px;
+}	
+	
+*/
+
+#footer {
+	position: fixed;
+	bottom: 0;
+	height: 25px;
+	color: gray;
+	background: #dddddb;
+	width:  100%;
+	text-align: center;
+	padding-top: 10px;
+	
+	
+}
+	
+	
+	
+	
+	

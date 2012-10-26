@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>//TYPECURIO\\</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <script type="text/javascript" src="http://use.typekit.com/bhl2buy.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+  <div id="header">
+    <div id="skipmenu">
+      <h2>
+        <%= link_to "TYPE CURIO", root_url %>
+
+        <hr id="hrule" />
+
+        <div id="subtext">foraging for type</div>
+      </h2>
+    </div>
+  </div>
+
+
+  <div id="mainnav">
+  <ul>
+    <li><%= link_to "Home", root_url %></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Popular</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><%= link_to "Contribute", new_submission_path %></li>
+  </ul>
+  </div>
+
+<%= yield %>
+
+
+  <div id="footer">
+    © TypeCurio 2010, All Rights Reserved
+  </div>
+</body>
+</html>
